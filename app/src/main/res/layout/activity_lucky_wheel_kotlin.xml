@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".luckyWheel.LuckyWheelJavaActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/rl1">
+        <com.bluehomestudio.luckywheel.LuckyWheel
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:background_color="#00BCD4"
+            app:image_padding="100dp"
+            android:id="@+id/luckyWheel"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/myshape"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="play"
+        android:layout_margin="20dp"
+        android:id="@+id/btnPlay"
+        android:layout_below="@+id/rl1"/>
+
+
+</RelativeLayout>
